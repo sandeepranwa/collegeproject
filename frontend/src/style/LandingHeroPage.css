@@ -1,0 +1,157 @@
+/* Container */
+.container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: linear-gradient(to bottom right, #e0f2fe, #ccfbf1);
+    padding: 20px;
+    overflow: hidden;
+  }
+  
+  /* Heading */
+  .heading {
+    font-size: 2rem;
+    font-weight: 800;
+    color: #4f46e5;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  @media (min-width: 768px) {
+    .heading {
+      font-size: 3rem;
+    }
+  }
+  
+  /* Subtext */
+  .subtext {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #374151;
+    max-width: 500px;
+  }
+  
+  @media (min-width: 768px) {
+    .subtext {
+      font-size: 1.2rem;
+    }
+  }
+  
+  /* Scrolling Info */
+  .scrolling-info {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 20px;
+    font-weight: bold;
+    color: #2563eb;
+    white-space: nowrap;
+    animation: scrollText 10s linear infinite;
+  }
+  
+  @keyframes scrollText {
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+  
+  /* Input & Button */
+  .input-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+    justify-content: center;
+  }
+  
+  .input-box {
+    padding: 12px;
+    width: 250px;
+    border: 2px solid #cbd5e1;
+    border-radius: 10px;
+    outline: none;
+    transition: border-color 0.3s;
+  }
+  
+  .input-box:focus {
+    border-color: #3b82f6;
+  }
+  
+  .signup-button {
+    background: linear-gradient(to right, #3b82f6, #6366f1);
+    color: white;
+    padding: 12px 20px;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.3s ease, background 0.3s ease;
+  }
+  
+  .signup-button:hover {
+    background: linear-gradient(to right, #2563eb, #4f46e5);
+    transform: scale(1.05);
+  }
+  
+  /* Moving Company Logos */
+  .slider {
+    width: 100%;
+    overflow: hidden;
+    margin-top: 40px;
+    position: relative;
+  }
+  
+  .slide-track {
+    display: flex;
+    width: calc(160px * 8);
+    animation: scrollCards 10s linear infinite;
+  }
+  
+  .slide {
+    width: 160px;
+    margin: 10px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .slide img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+  }
+  
+  .slide:hover img {
+    transform: scale(1.1);
+  }
+  
+  /* Hover pe rukega */
+  .slide-track:hover {
+    animation-play-state: paused;
+  }
+  
+  /* Scroll Animation */
+  @keyframes scrollCards {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-50%);
+    }
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .input-box {
+      width: 200px;
+    }
+    .slide {
+      width: 120px;
+    }
+  }
+  
