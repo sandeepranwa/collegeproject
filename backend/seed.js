@@ -1,12 +1,12 @@
 const mongoose = require('mongoose');
 const bcrypt = require('bcrypt');
 
-// MongoDB se connect karna
-mongoose.connect('mongodb://localhost:27017/CollegePC', {
+// MongoDB Atlas Connection
+mongoose.connect('mongodb+srv://ishwarprajapat5454:X4oAkWritR9U1ENj@collage.lz1dd.mongodb.net/', {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 })
-  .then(() => console.log('MongoDB connected'))
+  .then(() => console.log('MongoDB Atlas connected'))
   .catch((err) => console.log(err));
 
 // User Schema

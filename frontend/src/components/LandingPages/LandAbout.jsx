@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import img from '../../assets/biet.jpg';
 
 const AboutUs = () => {
   return (
@@ -26,7 +27,7 @@ const AboutUs = () => {
             viewport={{ once: true }}
           >
             <img
-              src="public/biet.jpg"
+              src={img}
               alt="Bhartiya Institute of Engineering & Technology"
               className="img-fluid rounded shadow-lg"
               style={{ maxWidth: "100%", height: "auto" }}
